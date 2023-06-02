@@ -8,7 +8,7 @@ def get_requirements(path:str)->List[str]:
     with open(path) as obj:
         require_item = obj.readlines()
         require_item = [item.replace("\n","")for item in require_item]
-        
+
         if HYPHEN_MINUS_E_DOT in require_item: require_item.remove(HYPHEN_MINUS_E_DOT)
     return require_item
 
