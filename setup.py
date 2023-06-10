@@ -13,7 +13,7 @@ def get_requirements(path:str)->List[str]:
     return require_item
 
 setup(
-    name='Data_Analyst_project',
+    name='Analyst_and_Choosing_the_best_model_project',
     version='0.1',
     author='Nguyen Hoang Long',
     author_email= 'longnh.uit@gmail.com',
