@@ -6,6 +6,7 @@ from source.logger import logging
 from dataclasses import dataclass
 from sklearn.model_selection import train_test_split
 from source.components.data_transformation import Data_transformation, Data_transformation_Config
+from source.components.data_model_trainer import ModelTrainerConfig, ModelTrainer
 #Define dataIngestion config
 @dataclass
 class DataIngestion_Config:
@@ -48,4 +49,7 @@ if __name__=='__main__':
     train_data,test_data = ingest.Ingest()
 
     data_transform=Data_transformation()
-    data_transform.initiate_data_transformation(train_data,test_data)
+    train_arr,test_arr,_ = data_transform.initiate_data_transformation(train_data,test_data)
+
+    model_trainer = ModelTrainer()
+    model_trainer.Initiate_ModelTrainer(train_arr,test_arr)
