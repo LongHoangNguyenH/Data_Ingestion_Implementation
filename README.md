@@ -22,7 +22,6 @@ some Machine Learning models used are:
     - **data_model_trainer**
     - **data_trainsformation**
   - **pipeline**  
-    - ****
     - **predict_pipeline.py**
     - **train_pipeline.py**
   - **exception.py**
