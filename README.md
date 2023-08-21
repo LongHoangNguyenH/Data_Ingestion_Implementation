@@ -1,10 +1,10 @@
  # Evaluate the best Machine Learning model project
  
- #TABLE OF CONTENT
+ # TABLE OF CONTENT
 1. [INTRODUCTION](#1-Introduction)
 2. [PROJECT STRUCTURE](#2-PROJECT-STRUCTURE)
 3. [DEMO](#3-DEMO)
-4. [EXPERIMENTAL CONFIGURATION](#4-EXPERIMENTAL-CONFIGURATION)
+
 
 ## INTRODUCTION
 This project is built to evaluate and select the best machine learning model based on metrics like accuracy, F1-score, precision, etc.
@@ -16,28 +16,54 @@ some Machine Learning models used are:
 + XGBRegressor
 
 ## PROJECT-STRUCTURE
-- **src:** All of our source code
-  - **public**
-    - **css**
-    - **img**: assets of our work
-    - **script/cnnimageretrieval-pytorch**: the Python core on handling models and systems lies behind our demo
-  - **resources**  
-    - **scss**
-    - **views:** Frontend code 
-  - **routes**
-    - index.js: Javascript core to process logical beyond Frontend 
-  - index.js: main js file to route the demo
-  - package.json
-- **notebook:** Log results on running our work
-- .gitattributes
-- .gitignore
+- **source:** 
+  - **components**
+    - **data_ingestion**
+    - **data_model_trainer**
+    - **data_trainsformation**
+  - **pipeline**  
+    - ****
+    - **predict_pipeline.py**
+    - **train_pipeline.py**
+  - **exception.py**
+  - **logger.py**
+  - **utils.py**
+- **Notebook:** Log results on running our work
+  - **catboost_info**
+  - **data**
+     - **stud.csv**
+  - student_processing.ipynb
+  - Training_model.ipynb
+- **templates:**
+  - **home.html** Front-end code
+  - **index.html** 
+- **env_DE:** Just virtual environment
+- **artifacts:** include train, test, raw data and model has been trained 
+- **Analyst_and_Choosing_the_best_model_project.egg-info:** information about author, project, dependency, require, etc.
+- **logs:** Log results on running our work
 - LICENSE
-- Procfile
-- deploy.sh
-- package.json
+- .gitignore
+- app.py
+- readme.md
 - requirements.txt
-- yarn.lock
-- report.pdf: Our final report on this work
+- setup.py
 ## DEMO
+To run appli cation 
+Firstly install dependancies.
+- Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+Secondly, Run project:
+```bash
+#using venv in windows
+env_DE\Scripts\activate
+# using venv in linux
+source env_DE/bin/activate
+#run application
+python app.py
+```
+Finally
+open webbrowser at site [[http://127.0.0.1:5000 ](http://127.0.0.1:5000/predictdata)](http://127.0.0.1:5000/predictdata)http://127.0.0.1:5000/predictdata
+Then choose specifications and our system will provide best ML model 
 
-## EXPERIMENTAL-CONFIGURATION
