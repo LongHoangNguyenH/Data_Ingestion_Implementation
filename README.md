@@ -65,4 +65,6 @@ python app.py
 Finally
 open webbrowser at site [http://127.0.0.1:5000/predictdata](http://127.0.0.1:5000/predictdata)
 Then choose specifications and our system will provide the prediction of the student
-
+There are some demo results
+![Specifications](./image/student_exam.png "specifications")
+![Result](./image/result.png.png "result")
