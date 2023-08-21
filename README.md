@@ -1,13 +1,13 @@
- # Evaluate the best Machine Learning model project
+ # Evaluate student's ability by using Machine learning model
  
- # TABLE OF CONTENT
+## TABLE OF CONTENT
 1. [INTRODUCTION](#1-Introduction)
 2. [PROJECT STRUCTURE](#2-PROJECT-STRUCTURE)
 3. [DEMO](#3-DEMO)
 
 
-## INTRODUCTION
-This project is built to evaluate and select the best machine learning model based on metrics like accuracy, F1-score, precision, etc.
+### INTRODUCTION
+This project is built to evaluate and select the best machine learning model based on metrics like accuracy, F1-score, precision, etc. To predict student's ability 
 some Machine Learning models used are:
 + Decision Tree
 + Random Forest
@@ -15,7 +15,7 @@ some Machine Learning models used are:
 + Linear Regression
 + XGBRegressor
 
-## PROJECT-STRUCTURE
+### PROJECT-STRUCTURE
 - **source:** 
   - **components**
     - **data_ingestion**
@@ -47,7 +47,7 @@ some Machine Learning models used are:
 - readme.md
 - requirements.txt
 - setup.py
-## DEMO
+### DEMO
 To run appli cation 
 Firstly install dependancies.
 - Install dependencies:
@@ -64,6 +64,6 @@ source env_DE/bin/activate
 python app.py
 ```
 Finally
-open webbrowser at site [[http://127.0.0.1:5000 ](http://127.0.0.1:5000/predictdata)](http://127.0.0.1:5000/predictdata)http://127.0.0.1:5000/predictdata
-Then choose specifications and our system will provide best ML model 
+open webbrowser at site [http://127.0.0.1:5000/predictdata](http://127.0.0.1:5000/predictdata)
+Then choose specifications and our system will provide the prediction of the student
 
